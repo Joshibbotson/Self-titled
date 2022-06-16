@@ -50,31 +50,74 @@ table {
 /* /////////////////////////////////////////////// */
 
 :root {
-
+    --p-text: black;
+    --font-weight-title: 600;
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Link styling */
 a:link {
     text-decoration: none;
-    color: black;
+    color: var(--p-text);
 }
 
 a:visited {
     text-decoration: none;
-    color: black;
+    color: var(--p-text);
 }
 
 a:active {
     text-decoration: none;
-    color: black;
+    color: var(--p-text);
 }
 
 a:hover {
     text-decoration: none;
-    color: black;
+    color: var(--p-text);
 }
 /* ---------------------*/
 
-ol {
-    list-style: circle
+li {
+    list-style-type: disc;
+    color: rgb(65, 182, 65);
+}
+
+p {
+    color: var(--p-text);
+    font-weight: 500;
+    font-family: var(--font);
+}
+b {
+    font-weight: bold;
+     font-family: var(--font);
+}
+
+h1 {
+    font-size: 2em;
+    font-family: var(--font);
+    font-weight: var(--font-weight-title);
+}
+
+header {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+nav {
+    margin: 1rem;
+}
+
+ul {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: var(--font-weight-title);
+    font-family: var(--font);
 }
