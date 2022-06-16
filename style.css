@@ -58,44 +58,42 @@ table {
 /* Link styling */
 a:link {
     text-decoration: none;
-    color: var(--p-text);
+    color: white;
 }
 
 a:visited {
     text-decoration: none;
-    color: var(--p-text);
+    color: white;
 }
 
 a:active {
     text-decoration: none;
-    color: var(--p-text);
+    color: white;
 }
 
 a:hover {
     text-decoration: none;
-    color: var(--p-text);
+    color: white;
 }
 /* ---------------------*/
 
-li {
-    list-style-type: disc;
-    color: rgb(65, 182, 65);
-}
 
 p {
     color: var(--p-text);
     font-weight: 500;
     font-family: var(--font);
 }
+
 b {
     font-weight: bold;
-     font-family: var(--font);
+    font-family: var(--font);
 }
 
 h1 {
     font-size: 2em;
     font-family: var(--font);
     font-weight: var(--font-weight-title);
+    padding-top: 2rem;
 }
 
 header {
@@ -106,18 +104,59 @@ header {
     margin-bottom: 1rem;
 }
 
-nav {
-    margin: 1rem;
+header > :first-child {
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
-ul {
+nav {
     display: flex;
-    align-items: space-between;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+
+    background-color: black;
+}
+
+li, a {
+    list-style-type: none;
 }
 
 h2 {
     font-size: 1.5em;
     font-weight: var(--font-weight-title);
     font-family: var(--font);
+    margin-bottom: 1rem;
 }
+
+p.text {
+    font-size: 0.8em ;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    list-style: none;
+}
+
+main {
+    margin: 2rem;
+}
+
+ol li::before {
+    content:  "\2022";
+    color: orange;
+    margin-left: -1em;
+}
+.sticky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
