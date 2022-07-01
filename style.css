@@ -50,7 +50,7 @@ table {
 /* /////////////////////////////////////////////// */
 
 :root {
-    --p-text: black;
+    --p-text: #142d4c;
     --font-weight-title: 600;
     --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -107,6 +107,7 @@ h1 {
 body {
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #ececec;
 }
 
 header {
@@ -130,11 +131,13 @@ nav {
     padding: 1rem;
     margin-top: 1rem;
 
-    background-color: rgba(236, 153, 29, 0.998);
+    background-color: #9fd3c7;
 }
 
 li, a {
     list-style-type: none;
+    font-family: var(--font);
+    color: #142d4c;
 }
 
 h2 {
@@ -142,6 +145,12 @@ h2 {
     font-weight: var(--font-weight-title);
     font-family: var(--font);
     margin-bottom: 1rem;
+    color: #142d4c;
+}
+h1 {
+    color: #142d4c;
+    font-family: var(--font);
+    font-weight: var(--font-weight-title);
 }
 
 p.text {
@@ -161,7 +170,7 @@ main {
 
 ol li::before {
     content:  "\2022";
-    color: orange;
+    color: #142d4c;
     margin-left: -1em;
 }
 .sticky {
